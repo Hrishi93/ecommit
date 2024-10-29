@@ -30,7 +30,7 @@ const productData= [
   {
     id: 4,
     name: 'Mobile Phone',
-    category:'smart phone',
+    category:'Smart Phones',
     price: '₹800',
     discount: '5% Off',
     image: 'https://m.media-amazon.com/images/I/81dT7CUY6GL._SL1500_.jpg',
@@ -73,6 +73,11 @@ const Products = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('ALL');
 
+
+  const handleCategoryChange = (category) =>{
+    setSelectedCategory(category);
+  }
+
   const filteredProducts = selectedCategory === 'ALL' 
   ? productData
   : productData.filter(product => product.category === selectedCategory);
@@ -80,12 +85,12 @@ const Products = () => {
   return (
     <div className='products-container'>
       <div className='category-filter'>
-        <button>All</button>
-        <button>Electronics</button>
-        <button>Musical Instruments</button>
-        <button>Home Appliances</button>
-        <button>Smart Phones</button>
-        <button>Wearables</button>
+        <button onClick={()=> handleCategoryChange('ALL')}>All</button>
+        <button onClick={()=> handleCategoryChange('Electronics')}>Electronics</button>
+        <button onClick={()=> handleCategoryChange('Musical Instruments')}>Musical Instruments</button>
+        <button onClick={()=> handleCategoryChange('Home Appliances')}>Home Appliances</button>
+        <button onClick={()=> handleCategoryChange('Smart Phones')}>Smart Phones</button>
+        <button onClick={()=> handleCategoryChange('Wearables')}>Wearables</button>
       </div>
       <div className='products'>
         {filteredProducts.map(product =>(
