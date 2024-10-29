@@ -6,7 +6,7 @@ import Header from './componets/Header';
 import Navbar from './componets/Navbar';
 
 import Home from './pages/Home';
-import Product from './pages/Product';
+import Products from './pages/Products';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
 
@@ -17,7 +17,7 @@ function App() {
        <Navbar />
        <Routes>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/product" element={<Product />}></Route>
+          <Route path="/products" element={<Products />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/login" element={<Login />}></Route>
        </Routes>
