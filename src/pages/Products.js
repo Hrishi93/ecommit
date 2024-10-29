@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import Product from './Product';
-import './Products.css'
+import './Products.css';
+import { CartContext } from './CartContext';
 
 const productData= [
   {
@@ -70,6 +71,7 @@ const productData= [
 ];
 
 const Products = () => {
+  const {addToCart} = useContext(CartContext);
 
   const [selectedCategory, setSelectedCategory] = useState('ALL');
 
@@ -100,6 +102,7 @@ const Products = () => {
           image={product.image}
           price={product.price}
           discount={product.discount}
+          onAddToCart={ ()=> addToCart(product)}
       
       />
 
