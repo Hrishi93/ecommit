@@ -97,10 +97,16 @@ const Home = () => {
         <button onClick={handleNextOffer} className='right-arrow'>&rarr;</button>
       </div>
 
-      <h1>Best Seller Products</h1>
+      <h1 className="title-best-seller">Best Seller Products</h1>
       <div className='best-seller'>
-
-
+        {bestSellers.map(item =>(
+          <div className="item-cart"> 
+            <img src={item.image} alt={item.name}></img>
+              <h4>{item.name}</h4>
+              <p>{item.price}</p>
+              <span className='discount'>{item.discount}</span>
+          </div>
+        ))}      
       </div>
     </div>
   )
