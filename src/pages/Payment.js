@@ -1,6 +1,8 @@
 import React from 'react'
 import {useLocation } from 'react-router-dom';
 
+import './Payment.css'
+
 const Payment = () => {
     const location = useLocation();
     const {product}=location.state;
