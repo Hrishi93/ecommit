@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ecommit/static/css/main.b2bf1626.css",
+    "main.js": "/ecommit/static/js/main.6d23dd92.js",
+    "static/js/453.34b5bcc5.chunk.js": "/ecommit/static/js/453.34b5bcc5.chunk.js",
+    "index.html": "/ecommit/index.html",
+    "main.b2bf1626.css.map": "/ecommit/static/css/main.b2bf1626.css.map",
+    "main.6d23dd92.js.map": "/ecommit/static/js/main.6d23dd92.js.map",
+    "453.34b5bcc5.chunk.js.map": "/ecommit/static/js/453.34b5bcc5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2bf1626.css",
+    "static/js/main.6d23dd92.js"
+  ]
+}
